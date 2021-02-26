@@ -8,6 +8,7 @@ License: Apache
 Group: System/Libraries
 BuildArch: noarch
 BuildRequires: python python-setuptools
+BuildRequires: python-pip python-wheel
 
 %description
 The oslo.i18n library contain utilities for working with internationalization
