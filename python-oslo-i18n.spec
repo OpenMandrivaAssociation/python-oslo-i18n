@@ -1,5 +1,5 @@
 Name: python-oslo-i18n
-Version: 6.2.0
+Version: 6.3.0
 Release: 1
 Source0: https://files.pythonhosted.org/packages/source/o/oslo.i18n/oslo.i18n-%{version}.tar.gz
 Summary: Python internationalization library
