@@ -11,6 +11,7 @@ BuildSystem: python
 BuildRequires: python%{pyver}dist(setuptools)
 BuildRequires: python%{pyver}dist(pip)
 BuildRequires: python%{pyver}dist(wheel)
+BuildRequires: python%{pyver}dist(pbr)
 
 %description
 The oslo.i18n library contain utilities for working with internationalization
