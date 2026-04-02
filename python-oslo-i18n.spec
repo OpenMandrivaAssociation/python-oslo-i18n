@@ -1,17 +1,20 @@
+%define module oslo_i18n
+
 Name: python-oslo-i18n
-Version: 6.7.1
+Version: 6.7.2
 Release: 1
-Source0: https://files.pythonhosted.org/packages/source/o/oslo_i18n/oslo_i18n-%{version}.tar.gz
 Summary: Python internationalization library
-URL: https://pypi.org/project/oslo.i18n/
 License: Apache
 Group: System/Libraries
-BuildArch: noarch
-BuildSystem: python
-BuildRequires: python%{pyver}dist(setuptools)
-BuildRequires: python%{pyver}dist(pip)
-BuildRequires: python%{pyver}dist(wheel)
-BuildRequires: python%{pyver}dist(pbr)
+URL: https://pypi.org/project/oslo.i18n/
+Source0: https://files.pythonhosted.org/packages/source/o/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+
+BuildSystem:	python
+BuildArch:	noarch
+BuildRequires:	python%{pyver}dist(pbr)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 The oslo.i18n library contain utilities for working with internationalization
@@ -19,5 +22,5 @@ The oslo.i18n library contain utilities for working with internationalization
 library.
 
 %files
-%{py_puresitedir}/oslo_i18n
-%{py_puresitedir}/oslo_i18n-%{version}.dist-info
+%{py_puresitedir}/%{module}
+%{py_puresitedir}/%{module}-%{version}.dist-info
