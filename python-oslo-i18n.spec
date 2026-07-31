@@ -1,7 +1,7 @@
 %define module oslo_i18n
 
 Name: python-oslo-i18n
-Version: 6.8.0
+Version: 6.9.0
 Release: 1
 Summary: Python internationalization library
 License: Apache
