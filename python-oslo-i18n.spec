@@ -2,7 +2,7 @@
 
 Name: python-oslo-i18n
 Version: 6.9.0
-Release: 1
+Release: 2
 Summary: Python internationalization library
 License: Apache
 Group: System/Libraries
@@ -15,6 +15,10 @@ BuildRequires:	python%{pyver}dist(pbr)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
+BuildRequires:	pkgconfig(python3)
+
+%build -p
+export PBR_VERSION="%{version}"
 
 %description
 The oslo.i18n library contain utilities for working with internationalization
